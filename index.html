@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--Todas as configuracoes do site-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio | Eng.Maluve</title>
+    <link rel="stylesheet" href="stylee.css">
+</head>
+
+<!--Conteudo principal da pagina-->
+
+<body>
+    <div class="particulas"></div>
+
+    <nav class="navegador">
+        <ul class="menu">
+            <li>
+                <a href="#inicio" class="menu-link">Inicio</a>
+            </li>
+            <li>
+                <a href="#sobre" class="menu-link">Sobre</a>
+            </li>
+            <li>
+                <a href="#projetos" class="menu-link">Projetos</a>
+            </li>
+            <li>
+                <a href="#contatos" class="menu-link">Contatos</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--Parte principal-->
+    <main id="inicio" class="cabecalho">
+        <!--Caixinha / div-->
+        <img src="img/Chill Guy.png" alt="Eng.Maluve" class="foto-perfil">
+        <h2 class="eng">Mirson Maluve</h2>
+        <h1>Desenvolvedor Full Stack</h1>
+
+    </main>
+
+    <!--Sessao / Sobre-->
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="sobre-caixa">
+            <h4 class="sobre-paragrafo">Sou estudante de Engnharia informatica, trabalho com desenvolvimento web Full
+                Stack. Tenho experiência na criação de sistemas web completos, trabalhando com tecnologias como (HTML,
+                CSS, JS) (Node.js+Express, PostgreSQL)...
+                <p>
+                    Atualmente, desenvolvo projetos que resolvem problemas reais, como plataformas de gestão e soluções para negócios locais. Tenho interesse especial em construir produtos
+                    eficientes, bem estruturados e com boa experiência de utilizador.
+
+                    Sou movido por evolução constante, aprendizado rápido e pela criação de soluções que geram valor 
+                    tanto para utilizadores quanto para negócios.
+                </p>
+            </h4>
+        </div>
+    </section>
+
+    <!--Sessao / Projetos-->
+    <section id="projetos" class="projetos">
+        <h3 class="projetos-titulo">Meus Projetos</h3>
+        <div class="projetos-caixa">
+            <div class="projetos-card">
+                <img src="img/OBRAVIA.jpeg" alt="logo obravia" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    <h4 class="info-projetos">Obravia</h4>
+                    <p class="paragrafo-projetos">O Obravia é uma plataforma web desenvolvida para conectar clientes a profissionais da área de engenharia civil, facilitando a contratação de serviços como construção, remodelação e consultoria técnica.</p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="img/Farmância Amuganguene.png" alt="logo farmacia" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    <h4 class="info-projetos">Farmacia Amuganguene</h4>
+                    <p class="paragrafo-projetos">Este sistema foi projetado para resolver problemas comuns no dia a dia farmacêutico, como controlo manual de stock, perda de medicamentos por validade expirada e dificuldade na gestão de vendas e clientes.</p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="img/armazem.png" alt="logo armazem" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    <h4 class="info-projetos">Sistema Armazem</h4>
+                    <p class="paragrafo-projetos">Este sistema resolve um problema comum em muitos negócios: a falta de controlo preciso sobre o stock, que frequentemente resulta em perdas, rupturas de produtos ou excesso de mercadoria parada.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="link_github" id="link_github">
+    <!-- Adicionada a classe titulo-perfil -->
+    <h1 class="titulo-perfil">Veja o meu Perfil:</h1> 
+    <button class="perfil_github" id="perfil_github">
+        <a href="https://github.com/220055-Mirson/">Ver Perfil do GitHub</a>
+    </button>
+</section>
+
+
+    <!--Sessao contatos-->
+    <section id="contatos" class="contatos">
+        <h2 class="titulo-contato">Entre em contato</h2>
+        <form class="formulario-contato" id="formulario" onsubmit="enviar_whats(event)">
+            <!--input / Campo para inserir nome-->
+            <div class="grupo-form">
+                <input type="text" placeholder="Nome" class="campo-form" id="nome" required>
+            </div>
+            <!--Area para descricao-->
+            <div class="grupo-form">
+                <textarea placeholder="Digite sua mensagem" class="campo-form" rows="6" id="mensagem"
+                    required></textarea>
+            </div>
+
+            <button type="submit" class="botao-form"> Enviar do Whatsapp</button>
+        </form>
+    </section>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
